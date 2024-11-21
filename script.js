@@ -2,6 +2,9 @@
 function revealSurprise() {
     const surpriseElement = document.getElementById('surprise');
     surpriseElement.style.display = 'block'; // Show the hidden surprise message
+
+    // Change the background color when the surprise is revealed
+    document.body.style.backgroundColor = "#ff6f61"; // Example color change
 }
 
 // Set exam start and end times
@@ -9,6 +12,7 @@ const examStartTime = new Date("November 22, 2024 09:00:00").getTime();
 const examEndTime = new Date("November 22, 2024 10:00:00").getTime();
 const countdownElement = document.getElementById('countdown');
 
+// Function to update the countdown
 function updateCountdown() {
     const now = new Date().getTime();
 
